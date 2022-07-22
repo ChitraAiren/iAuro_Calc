@@ -1,6 +1,9 @@
 <html>
     <head>
         <title>Calculator</title>
+        <link rel="stylesheet" href="Mycss.css">
+
+        <script src="Myjs.js"></script>
     </head>
 
     <body bgcolor="lightsalmon">
@@ -60,11 +63,12 @@
                         <button type="button" class="button" onclick="form1.box.value+='3'">3</button>
                         <button type="button" class="button" onclick="form1.box.value+='0'">0</button>
                         <button type="button" class="button" onclick="form1.box.value+='.'">.</button>
-                        <button type="button" class="button" onclick="form1.box.value+='%'">%</button>
+                        <button type="button" class="button" onclick="perc();">%</button>
                     </td>
                 </tr>
                 <tr>
                     <td>
+                        <button type="button" class="buttonlast" onclick="form1.box.value=form1.box.value.substr(0,form1.box.value.length-1)">CE</button>
                         <button type="button" class="buttonlast" onclick="form1.box.value=''">AC</button>
                         <button type="button" class="buttonlast" onclick="form1.box.value=eval(form1.box.value)">=</button>
                     </td>
